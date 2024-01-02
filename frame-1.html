@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Frame 1</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400" />
+  <link rel="stylesheet" href="./styles/frame-1.css" />
+  <style>
+    /* Add styles for clickable and hover effect */
+    .clickable {
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: inline-block; /* Ensures it behaves like a block-level element */
+      padding: 10px 20px; /* Add padding for better clickability */
+      border-radius: 5px; /* Optional: Add rounded corners */
+    }
+
+    .clickable:hover {
+      background-color: #ddd; /* Change the background color on hover as desired */
+    }
+
+    /* Adjust width and font size for email and password input fields */
+    .e-mail-u88,
+    .ifre-mg8 {
+      width: 1000px;
+      font-size: 24px; /* veya daha küçük bir değer deneyin */
+      padding: 10px; /* veya farklı bir değer deneyin */
+      margin: 5px; /* veya farklı bir değer deneyin */
+      max-height: 1000px;
+      background-color: rgb(241, 228, 209, 0.8999999762);
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame-1-Cn8">
+    <div class="auto-group-s7kg-WH2">
+      <div class="rectangle-18-3Gx">
+      </div>
+      <img class="d47427e7-6547-4c3d-98c1-49933c1359b2-1-ygQ" src="./assets/d47427e7-6547-4c3d-98c1-49933c1359b2-1.png" />
+    </div>
+    <div class="auto-group-usy4-Vue">
+      <div class="auto-group-avy2-QFv">
+        <!-- Convert "Giriş Yap" to a clickable button -->
+        <div class="auto-group-hasn-xqA clickable" onclick="redirectToDesktopPage()">Giriş Yap</div>
+        <!-- Add "clickable" class to make it clickable -->
+        <div class="auto-group-i3gx-7Ze clickable" onclick="redirectToFrame2()">Kayıt Ol</div>
+      </div>
+      <!-- Remove "Giriş Yap" div from here -->
+
+      <div class="line-10-dAc"></div>
+      <div class="line-11-Za4"></div>
+      <!-- Change <p> to <input> for email input -->
+      <input type="text" class="e-mail-u88" placeholder="E-Mail">
+      <!-- Change <p> to <input> for password input -->
+      <input type="password" class="ifre-mg8" placeholder="Şifre">
+    </div>
+
+    <script>
+      function redirectToDesktopPage() {
+        // Redirect to desktop-1.html page
+        window.location.href = 'desktop-1.html';
+      }
+
+      function redirectToFrame2() {
+        // Redirect to Frame 2
+        window.location.href = 'frame-2.html';
+      }
+    </script>
+  </div>
+</body>
+
+</html>
