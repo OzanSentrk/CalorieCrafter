@@ -369,3 +369,175 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
 }
+.e-mail{
+  width: 10.8rem;
+  height: 4.4rem;
+  margin-top: 150px;
+  left: 2.2rem;
+  top: 24.8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  width: 1000%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
+}
+.sifre{
+  width: 7.9rem;
+  height: 4.4rem;
+  
+  left: 2.2rem;
+  top: 45.8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
+  margin-top: 60px;
+}
+.sifre-tekrar{
+  width: 7.9rem;
+  height: 4.4rem;
+  margin-top: 60px;
+  left: 2.2rem;
+  top: 45.8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
+}
+.boy{
+  width: 7.9rem;
+  height: 4.4rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  left: 2.2rem;
+  top: 45.8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
+}
+.agirlik{
+  width: 7.9rem;
+  height: 4.4rem;
+  margin-top: 60px;
+  left: 2.2rem;
+  top: 45.8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
+}
+.durum{
+margin-top: 35px;
+background-color: rgb(241, 228, 209, 0.8999999762);
+width: auto;
+height: auto;
+padding: 20px;
+font-size: 2.6rem;
+outline: none;
+border-radius: 6rem;
+font-family: Inter, 'Source Sans Pro';
+}
+.submit-button{
+  margin-left: 550px;
+  margin-top: -85px;
+  width: 27.6rem;
+  height: 8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.1rem #f1e4d1;
+  box-sizing: border-box;
+  background-color: rgba(59, 107, 178, 0.5699999928);
+  border-radius: 6rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.gender-label {
+  
+  margin-right: 10px; 
+}
+
+.gender-input {
+  
+  vertical-align: middle; 
+}
+
+
+.username {
+  
+  width: 7.9rem;
+  height: 4.4rem;
+  margin-top: 50px;
+  left: 2.2rem;
+  top: 45.8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
+}
+.gender-label {
+ 
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.gender-input {
+  
+  font-size: 20px;
+  margin-right: 50px;
+  
+}
+.gender-title{
+  font-size:30px ;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  font-size: 3.6rem;
+  font-weight: 400;
+}

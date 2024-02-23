@@ -55,7 +55,7 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .auto-group-avy2-QFv {
+.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn {
   width: 75.6rem;
   height: 8.4rem;
   position: absolute;
@@ -64,7 +64,7 @@ body {
   display: flex;
   align-items: center;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .auto-group-avy2-QFv .auto-group-3gmz-iXW {
+.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn .auto-group-3gmz-iXW {
   margin-right: 20.4rem;
   width: 27.6rem;
   height: 100%;
@@ -83,7 +83,7 @@ body {
   border-radius: 6rem;
   flex-shrink: 0;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .auto-group-avy2-QFv .auto-group-i3gx-7Ze {
+.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn .kayıtBtn {
   width: 27.6rem;
   height: 100%;
   font-size: 3.6rem;
@@ -100,11 +100,13 @@ body {
   background-color: rgba(59, 107, 178, 0.5699999928);
   border-radius: 6rem;
   flex-shrink: 0;
+  margin-top: 1300px;
+  margin-left: 100px;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .auto-group-hasn-xqA {
+.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn .girisBtn {
   width: 27.6rem;
   height: 8.4rem;
-  position: absolute;
+  margin-top:1300px;
   left: 23.9rem;
   top: 69rem;
   font-size: 3.6rem;
@@ -120,6 +122,8 @@ body {
   box-sizing: border-box;
   background-color: rgba(59, 107, 178, 0.5699999928);
   border-radius: 6rem;
+  
+ 
 }
 .frame-1-Cn8 .auto-group-usy4-Vue .line-10-dAc {
   width: 75.4rem;
@@ -149,7 +153,12 @@ body {
   color: rgba(0, 0, 0, 0.4900000095);
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
 }
+
 .frame-1-Cn8 .auto-group-usy4-Vue .ifre-mg8 {
   width: 7.9rem;
   height: 4.4rem;
@@ -162,4 +171,19 @@ body {
   color: rgba(0, 0, 0, 0.4900000095);
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
+}
+.clickable {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Ensures it behaves like a block-level element */
+  padding: 10px 20px; /* Add padding for better clickability */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.clickable:hover {
+  background-color: #ddd; /* Change the background color on hover as desired */
 }

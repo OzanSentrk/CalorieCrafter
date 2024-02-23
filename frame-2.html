@@ -22,8 +22,7 @@
 <body>
   <div class="frame-2-kbv">
     <div class="auto-group-qcmj-ty2">
-      <div class="rectangle-18-2pL">
-      </div>
+      <div class="rectangle-18-2pL"></div>
       <img class="d47427e7-6547-4c3d-98c1-49933c1359b2-1-P96" src="./assets/d47427e7-6547-4c3d-98c1-49933c1359b2-1-pAx.png" />
     </div>
     <div class="auto-group-det6-WjW">
@@ -32,60 +31,86 @@
         <a href="./frame-1.html" class="auto-group-y4fe-Mk8">Giriş Yap</a>
         <div class="auto-group-srkg-a76">Kayıt Ol</div>
       </div>
-      <div class="auto-group-hqly-SQC">Kayıt Ol</div>
-      <div class="line-10-GPE">
-      </div>
-      <div class="line-11-1Lp">
-      </div>
-      <div class="line-12-x1A">
-      </div>
-      <div class="auto-group-74oe-ghr">
-      </div>
-      <p class="e-mail-mDW">E-Mail</p>
-      <p class="ifre-eYC">Şifre</p>
-      <p class="ifre-tekrar-xYt">Şifre Tekrar</p>
-      <div class="auto-group-uky4-GZa">
-        <p class="boy-cm--CCL">Boy (cm):</p>
-        <p class="arlk-kg--5X2">Ağırlık (kg) :</p>
-      </div>
-      <p class="hareketlilik-durmunuzu-seiniz--nwE">Hareketlilik Durmunuzu Seçiniz : </p>
-      <div class="auto-group-qax6-Dme">
-        <p class="hareketsiz-whe">
-          1-) Hareketsiz
-          <br />
-
-        </p>
-        <div class="rectangle-22-f7r">
-        </div>
-        <p class="az-hareketli-AqJ">
-          2-) Az Hareketli
-          <br />
-
-        </p>
-        <div class="rectangle-24-ry2">
-        </div>
-      </div>
-      <div class="auto-group-2tqn-ynk">
-        <p class="ortalama-hareketli-Ja8">3-) Ortalama Hareketli</p>
-        <div class="auto-group-maqc-bZE">
-          <div class="rectangle-27-uZv">
-          </div>
-        </div>
-        <p class="ortalama-st-hareketli-zrG">4-) Ortalama Üstü Hareketli</p>
-        <div class="rectangle-25-K7r">
-        </div>
-      </div>
-      <div class="auto-group-fw3n-SiG">
-        <p class="fazla-hareketli-jSU">
-          5-)Fazla Hareketli
-          <br />
-
-        </p>
-        <div class="rectangle-26-Fvc">
-        </div>
-      </div>
+      <form action="signup.php" method="post">
+        <!-- Input fields for email, password, and password confirmation -->
+        <input type="email" name="email" class="e-mail" placeholder="E-Mail">
+        <input type="password" name="password" class="sifre" placeholder="Şifre">
+        <input type="password" name="confirm_password" class="sifre-tekrar" placeholder="Şifre Tekrar">
+       
+        
+        <input type="text" name="username" class="username" placeholder="Kullanıcı Adı"> <input type="number" name="height" class="boy" placeholder="Boy (cm)">
+        <span class="gender-title">Cinsiyet Seçiniz:</span>
+        <label for="male" class="gender-label">Erkek</label>
+        <input type="radio" id="male" name="gender" value="m" class="gender-input">
+        <label for="female" class="gender-label">Kadın</label>
+       <input type="radio" id="female" name="gender" value="f" class="gender-input">
+        <input type="number" name="weight" class="agirlik" placeholder="Ağırlık (kg)"> 
+        
+        <select name="activity_level" class="durum">
+          <option value="inactive">1-) Hareketsiz</option>
+          <option value="lightly_active">2-) Az Hareketli</option>
+          <option value="moderately_active">3-) Ortalama Hareketli</option>
+          <option value="very_active">4-) Ortalama Üstü Hareketli</option>
+          <option value="extra_active">5-) Fazla Hareketli</option>
+        </select>
+        
+        
+        
+        <!-- Submit button -->
+        <button type="submit" class="submit-button">Kayıt Ol</button>
+      </form>
     </div>
   </div>
+  <!-- JavaScript for form validation -->
+  <script>
+    function validateForm() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm_password").value;
+      var username = document.getElementById("username").value;
+      var height = document.getElementById("height").value;
+      var weight = document.getElementById("weight").value;
+      var gender = document.querySelector('input[name="gender"]:checked');
+      var activityLevel = document.getElementById("activity_level").value;
+
+      if (email === "") {
+        alert("Lütfen geçerli bir e-posta adresi giriniz.");
+        return false;
+      }
+
+      if (password === "") {
+        alert("Lütfen geçerli bir şifre giriniz.");
+        return false;
+      }
+
+      if (username === "") {
+        alert("Lütfen geçerli bir kullanıcı adı giriniz.");
+        return false;
+      }
+
+      if (height === "") {
+        alert("Lütfen geçerli bir boy giriniz.");
+        return false;
+      }
+
+      if (weight === "") {
+        alert("Lütfen geçerli bir ağırlık giriniz.");
+        return false;
+      }
+
+      if (!gender) {
+        alert("Lütfen bir cinsiyet seçiniz.");
+        return false;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Şifreler eşleşmedi. Lütfen tekrar deneyin.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
 </body>
 
 </html>
