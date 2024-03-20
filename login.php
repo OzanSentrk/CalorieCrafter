@@ -23,8 +23,9 @@ if ($conn->connect_error) {
         echo "<script>alert('Hatalı e-posta veya şifre'); window.location.href='frame-1.html';</script>";
         exit;
     }
-
+// asdasdasdadssda
     $stmt->close();
     $conn->close();
 }
 ?>
+  
